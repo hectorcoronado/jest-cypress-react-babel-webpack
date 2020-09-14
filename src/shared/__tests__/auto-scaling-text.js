@@ -3,7 +3,8 @@ import {render} from '@testing-library/react'
 import AutoScalingText from '../auto-scaling-text'
 
 test('renders', () => {
-  const {debug} = render(<AutoScalingText />)
+  // const {debug} = render(<AutoScalingText />)
 
-  debug()
+  // debug()
+  render(<AutoScalingText />)
 })
