@@ -1,5 +1,5 @@
 import React from 'react'
-import {render, fireEvent} from '@testing-library/react'
+import {render, fireEvent} from 'calculator-test-utils'
 import Calculator from '../calculator'
 // import * as jestDOM from '@testing-library/jest-dom'
 

@@ -14,7 +14,12 @@ module.exports = {
   snapshotSerializers: ['jest-emotion'],
   // add this so that your modules resolve as expected
   // (the way they are resolved by webpack):
-  moduleDirectories: ['node_modules', path.join(__dirname, 'src'), 'shared'],
+  moduleDirectories: [
+    'node_modules',
+    path.join(__dirname, 'src'),
+    'shared',
+    path.join(__dirname, 'test'),
+  ],
   // execute these files after setting up test env:
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
 }
