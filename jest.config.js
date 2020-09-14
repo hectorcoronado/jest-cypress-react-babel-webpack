@@ -8,4 +8,5 @@ module.exports = {
     // import css modules!
     '\\.css$': require.resolve('./test/style-mock.js'),
   },
+  snapshotSerializers: ['jest-emotion'],
 }
