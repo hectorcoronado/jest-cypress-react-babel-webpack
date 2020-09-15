@@ -22,4 +22,21 @@ module.exports = {
   ],
   // execute these files after setting up test env:
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  // get accurate information when running test coverage reports:
+  collectCoverageFrom: ['**/src/**/*.js'],
+  // set a threshold for coverage:
+  coverageThreshold: {
+    global: {
+      statements: 34,
+      branches: 19,
+      functions: 32,
+      lines: 35,
+    },
+    './src/shared/utils.js': {
+      statements: 100,
+      branches: 80,
+      functions: 100,
+      lines: 100,
+    },
+  },
 }
